@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    /*grid-template-columns: repeat(7, calc(100% / 7)) auto calc(100% / 7) calc(100% / 7);*/
+    /*grid-template-columns: repeat(7 calc (100% / 7));*/
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "h h . . . a a"
+    "h h n n n a a"
+    "h h n n n a a"
+    "h h n n n a a"
+    "h h n n n o o"
+    "h h n n n o o"
+    "h h . . . o o";
+}
+
+header{
+    background-color: aqua;
+    grid-area: h;
+}
+nav{
+    background-color: rgb(78, 240, 159);
+    grid-area: n;
+}
+
+footer{
+    background-color: rgb(105, 244, 225);
+    grid-area: a;
+}
+
+label{
+    background-color: rgb(144, 218, 248);
+    grid-area: o;
+}
+
+
