@@ -25,7 +25,7 @@
         </header>
         <nav>
             <section id="Actividad">
-                
+
                 <table border="1">
                     <thead>
                         <tr>
@@ -37,20 +37,31 @@
                     <tbody>
                         <td>
                             <button>
-                                <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png"width="20">
+                                <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" width="20">
                             </button>
                         </td>
                         <td>
                             <button>
-                                <img src="https://www.pngall.com/wp-content/uploads/5/Delete-PNG-Clipart.png"width="20">
+                                <img src="https://www.pngall.com/wp-content/uploads/5/Delete-PNG-Clipart.png"
+                                    width="20">
                             </button>
                         </td>
                 </table>
             </section>
         </nav>
-        <footer></footer>
+        <footer id="Formulario Promedio">
+            <h3>Formulario de Promedio</h3>
 
-        <label>
+            <form action="#">
+                <label for="Promedio">Promedio:</label>
+                <input type="text" id="Promedio" name="Promedio" required><br><br>
+
+                <label for="nota">Estado:</label>
+                <input type="text" id="estado" name="estado" required min="0" max="5" step="0.1"><br><br>
+            </form>
+        </footer>
+
+        <label id = "Formulario nota">
             <h3>Formulario de Actividad</h3>
 
             <form action="#">
