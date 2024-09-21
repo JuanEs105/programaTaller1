@@ -28,17 +28,6 @@
                             <th>Actividad</th>
                             <th>Nota</th>   
                         </tr>
-                        <td>
-                            <button>
-                                <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" width="25" />
-                            </button>
-                        </td>
-                        <td>
-                            <button>
-                                <img src="https://www.pngall.com/wp-content/uploads/5/Delete-PNG-Clipart.png"
-                                    width="25" />
-                            </button>
-                        </td>
                     </thead>
                     <tbody id="lista-actividades">
                         <!-- Las actividades se añadirán aquí -->
@@ -46,24 +35,20 @@
                 </table>
             </section>
         </nav>
-        <label id="Formulario actividad">
+        <div id="Formulario-actividad">
             <h3>Formulario de Actividades</h3>
-            <br>
             <input type="text" id="nombre-actividad" placeholder="Nombre de la actividad" required />
-            <br>
             <input type="number" id="nota-actividad" placeholder="Nota" min="0" max="5" step="0.1" required />
-            <br>
-            <br>
-            <button type="submit">Agregar Actividad</button>
-        </label>
-        <footer id="Formulario Promedio">
+            <button type="button" id="agregar-actividad">Agregar Actividad</button>
+        </div>
+        <footer id="Formulario-Promedio">
             <h3>Formulario de Promedio</h3>
             <div id="promedio-notas">
                 <h3>Promedio: <span id="valor-promedio">0</span></h3>
             </div>
         </footer>
     </main>
-    <script src="codigotalle1.js"></script>
+    <script src="/js/codigotalle1.js"></script>
 </body>
 
 </html>
